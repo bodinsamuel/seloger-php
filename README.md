@@ -27,3 +27,6 @@ $results = $search->run();
 ```
 
 
+Api Details
+===========
+Look at [Api.md](API.md)

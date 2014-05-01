@@ -5,41 +5,25 @@ Unofficial PHP library to connect to seloger.com api
 
 Example
 =======
-    // Create new class
-    $seloger = new SeLoger();
-    
-    // Get request of type: Search
-    $search = $seloger->type('search');
-    
-    // Apply custom options
-    $search->type('rent');
-    $search->order('date_desc');
-    $search->property('appartement');
-    $search->zipcode(['750115']);
-    $search->price(800, 2500);
-    
-    // Additionnal
-    $search->si('elevator', TRUE);
-    
-    // Get results
-    $results = $search->run();
+```php
+// Create new class
+$seloger = new SeLoger();
 
-Details Api
-=========
-BaseUrl
-http://ws.seloger.com
+// Get request of type: Search
+$search = $seloger->type('search');
 
-Total
------
-/nbAnnoncesTotal.xml
+// Apply custom options
+$search->type('rent');
+$search->order('date_desc');
+$search->property('appartement');
+$search->zipcode(['750115']);
+$search->price(800, 2500);
 
+// Additionnal
+$search->si('elevator', TRUE);
 
-Search
--------
-/search.xml
+// Get results
+$results = $search->run();
+```
 
-
-Details
--------
-/annonceDetail.xml
 

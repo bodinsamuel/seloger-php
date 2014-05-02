@@ -36,7 +36,7 @@ class Request
         $headers = curl_getinfo($curl);
 
         if(curl_errno($curl))
-            throw new Exception('[SELOGER] ' . curl_error($curl));
+            throw new \Exception('[SELOGER] ' . curl_error($curl));
 
         // Throw when not OK
         if ($headers['http_code'] !== 200)

@@ -1,0 +1,21 @@
+{
+    "name": "bodinsamuel/seloger-php",
+    "description": "Unofficial PHP library to connect to seloger.com api",
+    "version": "1.0.0",
+    "keywords": ["api", "seloger"],
+    "homepage": "https://github.com/bodinsamuel/seloger-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bodin Samuel",
+            "email": "bodin.samuel@gmail.com",
+            "homepage": "http://h1fra.fr"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Seloger": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

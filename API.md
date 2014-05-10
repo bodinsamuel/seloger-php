@@ -14,6 +14,30 @@ GET /nbAnnoncesTotal.xml
 ## Search
 ```C#
 GET /search.xml
+string tri              (a_dt_crea|d_dt_crea|a_px|d_px|a_surface|d_surface) ORDER BY 
+uint   idtt             (1|2) renting or selling
+uint   SEARCHpg         pagination
+uint   idtypebien       (0 -> 15) Multiple = Comma separated
+uint   ci               Zipcode = Insee zipcode
+uint   pxmin            Minimum Price
+uint   pxmax            Maximum Price
+uint   surfacemin       Minimum Surface
+uint   surfacemax       Maximum Surface
+uint   surf_terrainmin  Minimum landing surface
+uint   surf_terrainmax  Maximum landing surface
+mixed  piece            (0|1|2|3|4|+5|all) Multiple = Comma separated
+uint   photo            (10|0) true or false
+
+SI                      1 = true, 0 = false
+uint   si_ascensceur    
+uint   si_digicode
+uint   si_interphone
+uint   si_gardien
+uint   si_piscine
+uint   si_balcon
+uint   si_parking
+uint   si_box
+uint   si_cave
 ```
 
 ## Details

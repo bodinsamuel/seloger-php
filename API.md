@@ -3,15 +3,24 @@
 http://ws.seloger.com
 
 ## Total
-    GET /nbAnnoncesTotal.xml
+```C#
+GET /nbAnnoncesTotal.xml
+```
+```xml
+<nbAnnoncesTotal>1466785</nbAnnoncesTotal>
+```
 
 
 ## Search
-    GET /search.xml
-
+```C#
+GET /search.xml
+```
 
 ## Details
-    GET /annonceDetail.xml
+```C#
+GET /annonceDetail.xml
+uint idAnnonce
+```
 
 # User Api
 **BaseUrl**

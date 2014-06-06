@@ -10,7 +10,6 @@ class Request
 
     /**
      * Make request to SeLoger.com api
-     * @param  string $type
      * @return SimpleXMLElement
      */
     public function run()

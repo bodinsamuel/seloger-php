@@ -5,12 +5,11 @@ Unofficial PHP library to connect to seloger.com api
 
 Example
 =======
+Search
+------
 ```php
 // Create new class
-$seloger = new SeLoger();
-
-// Get request of type: Search
-$search = $seloger->type('search');
+$search = new Seloger\Search();
 
 // Apply custom options
 $search->type('rent');
@@ -24,6 +23,24 @@ $search->si('elevator', TRUE);
 
 // Get results
 $results = $search->run();
+```
+
+Other
+-----
+```php
+// Create class
+$request = new Seloger\Request();
+
+
+// Number of post
+$request->type = 'nbAnnoncesTotal';
+$results = $request->run();
+
+
+// Detail of a post
+$request->type = 'annonceDetail';
+$request->setParams('idAnnonce', 123456);
+$results = $request->run();
 ```
 
 
